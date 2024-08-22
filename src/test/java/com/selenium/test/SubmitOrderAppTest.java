@@ -57,7 +57,7 @@ public class SubmitOrderAppTest extends BaseTest {
 
 		checkoutPage.selectCountry("India");
 		ConfirmationPage confirmationPage = checkoutPage.submitOrder();
-        System.out.println("submitOrder Test")
+       
 		String orderActualMessage = confirmationPage.getConfirmPage();
 		Assert.assertTrue(orderActualMessage.equalsIgnoreCase("Thankyou for the order."));
 
