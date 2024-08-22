@@ -60,7 +60,7 @@ public class SubmitOrderAppTest extends BaseTest {
        
 		String orderActualMessage = confirmationPage.getConfirmPage();
 		Assert.assertTrue(orderActualMessage.equalsIgnoreCase("Thankyou for the order."));
-
+        System.out.println("Shakti");
 	}
 	
 	
