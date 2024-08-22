@@ -44,7 +44,7 @@ public class SubmitOrderAppTest extends BaseTest {
 	
 	@Test(dataProvider = "getData",groups = {"Purchase"})
 	public void submitOrder(HashMap<String, String> map ) throws IOException {
-        System.out.println("submitOrder")
+        System.out.println("submitOrder Log")
 		ProductCataloguePage productCataloguePage = landingPage.loginApplication(map.get("userEmail"), map.get("userPassword"));
 		productCataloguePage.addProductToCart(map.get("productName"));
 
